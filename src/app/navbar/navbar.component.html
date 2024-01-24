@@ -1,0 +1,29 @@
+<!-- navbar.component.html -->
+
+<nav class="navbar">
+    <div class="logo">Your Logo</div>
+    <ul class="nav-links">
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/contact">Our Work</a></li>
+      <li class="dropdown">
+        <a routerLink="/services">Services</a>
+        <ul class="dropdown-content">
+          <li><a routerLink="/service1">Website Design & Development</a></li>
+          <li><a routerLink="/service2">App Development</a></li>
+          <li><a routerLink="/service3">Social Media Marketing</a></li>
+          <li><a routerLink="/service4">Search Engine Optimization</a></li>
+          <!-- Add more service links as needed -->
+        </ul>
+      </li>
+    </ul>
+    <div class="social-links">
+      <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a routerLink="/contact" class="get-in-touch">Get in Touch</a>
+    </div>
+  </nav>
+  
+  <router-outlet></router-outlet>
+  
