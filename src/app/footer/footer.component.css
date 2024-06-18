@@ -1,0 +1,75 @@
+.footer-container {
+  background-color: #f9d6fe; /* Original background color */
+  padding: 20px;
+  transition: background-color 0.5s ease; /* Transition property */
+}
+
+.footer-container:hover {
+  background-color: #d4b4ea; /* Adjusted background color */
+}
+
+.left-content {
+  float: left;
+  width: 100%; /* Adjust the width as needed */
+}
+
+.center-content {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%; /* Adjust the width as needed */
+}
+
+.bottom-center-content {
+  clear: both;
+  text-align: center;
+  padding-left: 0; /* Adjust as needed */
+}
+
+.menu {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0; /* Adjust as needed */
+}
+
+.menu a {
+  color: rgb(16, 16, 16);
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease; /* Add smooth transition effect */
+}
+
+.menu a:hover {
+  color: #007bff; /* Change to desired hover color */
+}
+
+.social-icons {
+  display: block;
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.social-icons a {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.social-icons a:hover {
+  color: #6ea9e8; /* Change to desired hover color */
+}
+
+.description {
+  margin-top: 20px; /* Adjust as needed */
+  text-align: center;
+}
+
+.address p,
+.description p,
+.menu ul,
+.social-icons {
+  margin: 5px 0; /* Adjust spacing between paragraphs */
+}
+
+.address p:first-child,
+.menu ul:first-child {
+  margin-top: 0;
+}

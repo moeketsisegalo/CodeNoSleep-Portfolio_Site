@@ -1,0 +1,71 @@
+body {
+  background-color: black;
+}
+
+.choose-us {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.label {
+  cursor: pointer;
+  width: 30%; /* Adjust label width as needed */
+  margin-bottom: 20px;
+}
+
+.fill {
+  height: 10px;
+  background-color: #007bff; /* Blue color */
+}
+
+.full-width-image {
+  width: 50%;
+  height: 50vh;
+  display: block; /* Ensures the image behaves as a block element */
+  margin-left: auto; /* Automatically centers the image horizontally */
+  margin-right: auto;
+}
+
+h2 {
+  color: aqua;
+}
+
+.image-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 300%; /* Adjust the percentage to move the animation down */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.animated-text {
+  font-size: 3rem;
+  color: white;
+  animation: slideIn 20s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

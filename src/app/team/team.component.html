@@ -1,0 +1,10 @@
+<div>
+  <h2 class="team-heading">OUR TEAM</h2>
+  <div class="team-section">
+      <div *ngFor="let member of teamMembers" class="team-member">
+          <img [src]="member.photoUrl" alt="{{ member.name }}">
+          <h3>{{ member.name }}</h3>
+          <p>{{ member.title }}</p>
+      </div>
+  </div>
+</div>

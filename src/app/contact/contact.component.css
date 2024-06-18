@@ -1,0 +1,151 @@
+/* contact-form.component.css */
+
+/* .contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/08/22/46/post-1244980_960_720.png');
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .contact-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent white background for better readability */
+    /* padding: 30px;
+    border-radius: 10px;
+  }
+   */
+/* .form-group {
+    margin-bottom: 20px;
+  }    */
+  /* label {
+    display: block;
+    color: #333; /* Adjust text color for better contrast with the background */
+    /* font-size: 18px;
+    margin-bottom: 5px;
+  }  */ 
+/*   
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff; /* Background color for input fields */
+    /* color: #333; /* Text color for input fields */
+    /* font-size: 16px; */
+  /* }  */ 
+/*   
+  textarea {
+    resize: none;
+  } */
+  
+  /* .submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  } */
+  
+  /* .submit-btn:hover {
+    background-color: #0056b3;
+  }
+   */ 
+
+   .contact-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/08/22/46/post-1244980_960_720.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .contact-form-container form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .contact-form-container label {
+    font-weight: bold;
+  }
+  
+  .contact-form-container input[type="email"],
+  .contact-form-container textarea,
+  .contact-form-container input[type="tel"],
+  .contact-form-container button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-form-container input[type="email"]:focus,
+  .contact-form-container textarea:focus,
+  .contact-form-container input[type="tel"]:focus,
+  .contact-form-container button:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .contact-form-container .error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .contact-form-container button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-form-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  
+  .contact-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    opacity: 0; /* Initially set opacity to 0 */
+    animation: slideIn 1s ease forwards; /* Apply slideIn animation */
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%); /* Start off-screen (above) */
+      opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+      transform: translateY(0); /* Slide in to top position */
+      opacity: 1; /* Fade in to opacity 1 */
+    }
+  }
+  
+  .contact-form-container form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  /* Other styles remain the same */
+  

@@ -1,0 +1,73 @@
+/* blog-post.component.css */
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap; /* Added to wrap the posts to the next row */
+}
+
+.blog-post {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-right: 20px;
+    opacity: 1; /* Initially set to 1 to ensure posts are visible */
+    margin-bottom: 20px; /* Added for spacing between posts */
+}
+
+.blog-post:last-child {
+    margin-right: 0;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.blog-post h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.continue-reading {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.continue-reading:hover {
+    background-color: #0056b3;
+}
+
+/* Add animation to make blog posts appear as the user scrolls */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in animation to blog posts */
+.blog-post.in-view {
+    animation: fade-in 3s ease-out;
+}

@@ -1,0 +1,39 @@
+.team-heading{
+  text-align: center;
+}
+.team-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  text-align: center; /* Center text content */
+}
+
+.team-member {
+  width: calc(33.33% - 20px); /* Each member takes up one-third of the container width minus margins */
+  margin: 20px 0; /* Add vertical margin */
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.team-member h3 {
+  margin-top: 10px; /* Add spacing between name and title */
+}
+
+@media screen and (max-width: 768px) {
+  .team-member {
+      width: 100%; /* Each member takes up full width on smaller screens */
+  }
+
+  .team-member h3 {
+      margin-top: 0; /* Remove top margin for name on smaller screens */
+  }
+}
+
+.team-heading {
+  width: 100%; /* Ensure heading takes up full width */
+  margin-bottom: 20px; /* Add space below the heading */
+}

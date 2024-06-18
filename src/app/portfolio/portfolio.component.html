@@ -1,0 +1,13 @@
+<div class="portfolio">
+  <h1>My Portfolio</h1>
+  <div class="portfolio-list">
+      <div class="portfolio-item" *ngFor="let website of portfolio.websites">
+          <img [src]="website.image" alt="{{ website.name }}" class="portfolio-image">
+          <div class="portfolio-details">
+              <h3>{{ website.name }}</h3>
+              <p>{{ website.description }}</p>
+              <a [href]="website.link" target="_blank">Visit Website</a>
+          </div>
+      </div>
+  </div>
+</div>

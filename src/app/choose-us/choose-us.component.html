@@ -1,0 +1,37 @@
+<img src="/assets/tech.jpg" alt="Image Description" class="full-width-image">
+<div class="overlay">
+  <h1 class="animated-text">CodeNoSleep</h1>
+</div>
+<div class="choose-us">
+  <h2>Why Choose Us:</h2>
+  <div class="container">
+    <div class="top">
+      <div class="label" (mouseover)="fillUp(0)" (mouseleave)="resetFill(0)">
+        Responsive & Friendly
+        <div class="fill" [style.width.%]="fills[0]"></div>
+      </div>
+      <div class="label" (mouseover)="fillUp(1)" (mouseleave)="resetFill(1)">
+        Cost Effective
+        <div class="fill" [style.width.%]="fills[1]"></div>
+      </div>
+      <div class="label" (mouseover)="fillUp(2)" (mouseleave)="resetFill(2)">
+        We Deliver
+        <div class="fill" [style.width.%]="fills[2]"></div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="label" (mouseover)="fillUp(3)" (mouseleave)="resetFill(3)">
+        Customer Satisfaction
+        <div class="fill" [style.width.%]="fills[3]"></div>
+      </div>
+      <div class="label" (mouseover)="fillUp(4)" (mouseleave)="resetFill(4)">
+        No Hidden Fees
+        <div class="fill" [style.width.%]="fills[4]"></div>
+      </div>
+      <div class="label" (mouseover)="fillUp(5)" (mouseleave)="resetFill(5)">
+        Customer Support
+        <div class="fill" [style.width.%]="fills[5]"></div>
+      </div>
+    </div>
+  </div>
+</div>

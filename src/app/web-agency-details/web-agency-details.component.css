@@ -1,0 +1,61 @@
+/* web-agency-details.component.css */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Updated to stretch vertically */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .left-content,
+  .right-content {
+    width: 48%; /* Adjust the width as needed */
+  }
+  
+  .vertical-line {
+    width: 2px;
+    background-color: #ccc; /* Adjust the color as needed */
+    height: 100%; /* Updated to 100% height to stretch vertically */
+    margin: 0 20px; /* Adjust the margin as needed */
+  }
+  
+  /* Additional styling for the left and right content */
+  .left-content {
+    color: #333; /* Adjust the text color as needed */
+  }
+  
+  .right-content {
+    color: #555; /* Adjust the text color as needed */
+  }
+  
+  /* Specific styling for the blue text */
+  .left-content p:first-of-type {
+    color: #4285f4; /* Adjust the blue color as needed */
+  }
+
+/* web-agency-details.component.css */
+/* web-agency-details.component.css */
+
+/* web-agency-details.component.css */
+
+.flowing-heading {
+    font-family: 'Arial', sans-serif; /* Use a custom font (replace 'CursiveFont' with your preferred font) */
+    font-size: 3em; /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+    white-space: nowrap; /* Prevent the heading from wrapping */
+    overflow: hidden; /* Hide any overflow */
+    animation: moveLeftToRight 10s ease-in-out infinite; /* Animation properties with a slower speed and ease-in-out timing function */
+  }
+  
+  @keyframes moveLeftToRight {
+    0% {
+      transform: translateX(-100%); /* Start off-screen to the left */
+    }
+    100% {
+      transform: translateX(100%); /* Move off-screen to the right */
+    }
+  }
+  

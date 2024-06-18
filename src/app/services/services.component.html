@@ -1,0 +1,29 @@
+<!-- services.component.html -->
+
+<section>
+    <div class="service-links">
+      <button (click)="selectedService = 'website-design'">Website Design & Development</button>
+      <button (click)="selectedService = 'social-media-marketing'">Social Media Marketing</button>
+      <button (click)="selectedService = 'Software-Development'">Software Development</button>
+    </div>
+  
+    <ng-container *ngIf="selectedService; else noServiceSelected">
+      <div class="service-content">
+        <div class="service-details">
+          <h2>{{ selectedService | titlecase }}</h2>
+          <p>{{ serviceContent[selectedService] }}</p>
+        </div>
+      </div>
+    </ng-container>
+  
+    <div class="service-links">
+      <button (click)="selectedService = 'Mobile-App'">Mobile App Development</button>
+      <button (click)="selectedService = 'Search-Engine-Optimization'">Search-Engine-Optimization</button>
+      <button (click)="selectedService = 'E-Commerce'">E-Commerce</button>
+    </div>
+  
+    <ng-template #noServiceSelected>
+      <p>Select a service to view details.</p>
+    </ng-template>
+  </section>
+  

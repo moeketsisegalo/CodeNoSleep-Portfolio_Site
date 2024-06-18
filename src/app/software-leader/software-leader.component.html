@@ -1,0 +1,31 @@
+<!-- software-leader.component.html -->
+<section class="software-leader">
+  <div class="container">
+      <div class="red-block">
+          <h2 class="section-title">ALL THINGS DEVELOPMENT</h2>
+      </div>
+      <p class="sub-heading">
+          PIONEERING IN SOFTWARE EXCELLENCE,
+      </p>
+      <p class="sub-sub-heading">
+          AND WEB DEVELOPMENT INNOVATION
+      </p>
+      <p class="industry-description">
+          A trailblazer in the software and web development industry, established in 2023,</p>
+      <p class="industry-description">
+          excelling in various aspects of technology - Software design,
+      </p>
+      <p class="industry-description">
+          Web development, Application development, Cybersecurity – we lead the way!
+      </p>
+      <button class="quote-button">FREE QUOTE</button>
+  </div>
+  <div class="image-container" *ngIf="images.length > 0">
+      <!-- <img src="assets/LAPTOP1.jpg" alt="Description of the image"> -->
+      <img [src]="images[currentImageIndex]" alt="Description of the image">
+      <div class="arrow-buttons">
+          <button (click)="navigateImage('left')">&#9664;</button>
+          <button (click)="navigateImage('right')">&#9654;</button>
+      </div>
+  </div>
+</section>
